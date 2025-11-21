@@ -42,7 +42,7 @@ const styles = {
 		borderLeft: "4px solid",
 	},
 	total: { borderLeftColor: "#6c757d" },
-	pending: { borderLeftColor: "#ffc107" },
+	pending: { borderLeftColor: "#fc0101ff" },
 	progress: { borderLeftColor: "#007bff" },
 	completed: { borderLeftColor: "#28a745" },
 	label: {

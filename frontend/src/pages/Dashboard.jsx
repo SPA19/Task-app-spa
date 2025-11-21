@@ -130,14 +130,14 @@ const Dashboard = () => {
 			<header style={styles.header}>
 				<div style={styles.headerContent}>
 					<div>
-						<h1 style={styles.appTitle}>📝SPA TaskApp</h1>
+						<h1 style={styles.appTitle}>📝TaskApp</h1>
 						<p style={styles.greeting}>Hola, {user?.name}! 👋</p>
 					</div>
 					<button
 						onClick={handleLogout}
 						style={styles.logoutButton}
 					>
-						🚪 Cerrar Sesión
+						Cerrar Sesión
 					</button>
 				</div>
 			</header>
@@ -165,6 +165,12 @@ const Dashboard = () => {
 					onStatusChange={handleStatusChange}
 				/>
 			</main>
+			<footer style={styles.footer}>
+				<p>
+					© 2025 Administracion de tareas personales con Vite + React • Desarrollado
+					por Simón Posada Acosta
+				</p>
+			</footer>
 		</div>
 	);
 };
@@ -172,13 +178,16 @@ const Dashboard = () => {
 const styles = {
 	container: {
 		minHeight: "100vh",
-		backgroundColor: "#f5f5f5",
+		backgroundColor: "#d3e7f9ff", // Fondo general gris claro
 	},
+
 	header: {
-		backgroundColor: "white",
+		background: "linear-gradient(90deg, #000080, #87CEEB)",
+		color: "white",
 		boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
 		padding: "1rem 0",
 	},
+
 	headerContent: {
 		maxWidth: "1200px",
 		margin: "0 auto",
@@ -189,30 +198,47 @@ const styles = {
 		flexWrap: "wrap",
 		gap: "1rem",
 	},
+
 	appTitle: {
 		margin: 0,
-		color: "#333",
+		color: "white",
 		fontSize: "1.75rem",
 	},
+
 	greeting: {
 		margin: "0.5rem 0 0 0",
-		color: "#666",
+		color: "#E8ECFF", // Azul muy claro para buen contraste
 		fontSize: "0.9rem",
 	},
+
 	logoutButton: {
 		padding: "0.75rem 1.5rem",
-		backgroundColor: "#dc3545",
+		backgroundColor: "#00008B", // Botón rojo elegante
 		color: "white",
 		border: "none",
 		borderRadius: "4px",
 		cursor: "pointer",
 		fontWeight: "500",
 		fontSize: "0.9rem",
+		transition: "background 0.2s ease",
 	},
+
+	logoutButtonHover: {
+		backgroundColor: "#333", // Hover más oscuro
+	},
+
 	main: {
 		maxWidth: "1200px",
 		margin: "2rem auto",
 		padding: "0 1rem",
+	},
+
+	footer: {
+		backgroundColor: "#1F1F1F",
+		color: "white",
+		textAlign: "center",
+		padding: "25px",
+		marginTop: "45px",
 	},
 };
 

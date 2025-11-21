@@ -122,7 +122,7 @@ const TaskForm = ({ taskToEdit, onSubmit, onCancel }) => {
 						type="submit"
 						style={{ ...styles.button, ...styles.submitButton }}
 					>
-						{taskToEdit ? "💾 Guardar Cambios" : "➕ Crear Tarea"}
+						{taskToEdit ? "💾 Guardar Cambios" : "Crear Tarea"}
 					</button>
 					{taskToEdit && (
 						<button

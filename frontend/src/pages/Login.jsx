@@ -92,10 +92,10 @@ const styles = {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		backgroundColor: "#f5f5f5",
+		backgroundColor: "#d3e7f9ff",
 	},
 	card: {
-		backgroundColor: "white",
+		backgroundColor: "#F8F8FF",
 		padding: "2rem",
 		borderRadius: "8px",
 		boxShadow: "0 2px 10px rgba(0,0,0,0.1)",

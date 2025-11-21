@@ -90,13 +90,13 @@ const TaskCard = ({ task, onEdit, onDelete, onStatusChange }) => {
 						onClick={() => onEdit(task)}
 						style={{ ...styles.button, ...styles.editButton }}
 					>
-						✏️ Editar
+						Editar
 					</button>
 					<button
 						onClick={handleDelete}
 						style={{ ...styles.button, ...styles.deleteButton }}
 					>
-						🗑️ Eliminar
+						Eliminar
 					</button>
 				</div>
 			</div>
